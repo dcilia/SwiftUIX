@@ -41,7 +41,7 @@ struct _UpdateSheetBackground: ViewModifier {
             #else
             if #available(macOS 11, *) {
                 viewController.view.wantsLayer = true
-                viewController.view.layer?.backgroundColor = color.cgColor
+                viewController.view.layer?.backgroundColor = color?.cgColor
             }
             #endif
         }
